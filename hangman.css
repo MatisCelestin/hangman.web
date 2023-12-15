@@ -1,0 +1,51 @@
+  /* Reset des marges et paddings par défaut */
+body, h1, p, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Utilisation d'une image de fond pour la forêt */
+    background-image: url('background.jpeg'); /* Remplacez 'background.jpeg' par le nom de votre fichier image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Assure que l'image couvre toute la hauteur de la fenêtre */
+    overflow-x: hidden; /* Cache la barre de défilement horizontale si nécessaire */
+    display: flex;
+    justify-content: center; /* Centre horizontalement le contenu */
+    align-items: center; /* Centre verticalement le contenu */
+    position: relative; /* Position relative pour les gouttes de pluie */
+}
+
+.container {
+    text-align: center;
+    position: relative; /* Position relative pour les éléments à l'intérieur */
+    z-index: 1; /* Empilement au-dessus des gouttes de pluie */
+}
+
+h1 {
+    font-size: 3em;
+    color: #ffffff; /* Dark green for the title */
+}
+
+p {
+    font-size: 1.2em;
+    color: #ffffff; /* Olive for the text */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #8B4513; /* Brown for the button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #A0522D; /* Change color on hover */
+}
